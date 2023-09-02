@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-    
+     let salarioBase = parseFloat(prompt("Digite o seu salário-base:"));
     
     //PROCESSAMENTO
-    
-    
+     let gratificacao = 200.00;
+     let taxaDesconto = 0.10;
+     let desconto = salarioBase * taxaDesconto;
+     let salarioLiquido = salarioBase + gratificacao - desconto;
     //SAÍDA
-    
+     document.write("O seu salário líquido é de R$" + salarioLiquido.toFixed(2));
 </script>

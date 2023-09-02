@@ -10,11 +10,17 @@
     */
 
     //ENTRADA
-
-    
+     let horasPedreiro = parseFloat(prompt("Digite o número de horas trabalhadas pelo pedreiro:"));
+     let horasPintor = parseFloat(prompt("Digite o número de horas trabalhadas pelo pintor:"));
+        
+     let taxaPedreiro = 30.00;
+     let taxaPintor = 25.00;
+      
     //PROCESSAMENTO
-    
-    
+     let pagamentoPedreiro = horasPedreiro * taxaPedreiro;
+     let pagamentoPintor = horasPintor * taxaPintor;
     //SAÍDA
-    
+     document.write("Valor a ser pago para o pedreiro: R$" + pagamentoPedreiro.toFixed(2));
+     document.write("Valor a ser pago para o pintor: R$" + pagamentoPintor.toFixed(2));
+     document.write("Custo total da obra: R$" + custoTotal.toFixed(2));
 </script>

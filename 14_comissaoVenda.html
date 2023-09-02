@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-    
-    
+     let salarioFixo = parseFloat(prompt("Digite o salário fixo do vendedor:"));
+     let carrosVendidos = parseInt(prompt("Digite a quantidade de carros vendidos pelo vendedor:"));
+     let valorVendas = parseFloat(prompt("Digite o valor total das vendas efetuadas pelo vendedor:"));
     //PROCESSAMENTO
-    
-    
+     let remuneracao = salarioFixo + (carrosVendidos * 225) + (0.05 * valorVendas);
+     let impostos = 0.20 * remuneracao;
+     let remuneracaoLiquida = remuneracao - impostos;
     //SAÍDA
-    
+     document.write("A remuneração total do vendedor é: R$" + remuneracao.toFixed(2));
+     document.write("O desconto de impostos é: R$" + impostos.toFixed(2));
+     document.write("A remuneração líquida do vendedor após os impostos é: R$" + remuneracaoLiquida.toFixed(2));
 </script>

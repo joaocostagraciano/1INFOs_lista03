@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
+       
+     let  pesoDoPrato = parseFloat(prompt("Digite o peso do seu prato em quilos:"));
+  
+    //PROCESSAMENTO
+     let precoPorQuilo = 49.90;
+     let precoDaRefeicao = pesoDoPrato * precoPorQuilo;
 
     
-    //PROCESSAMENTO
-    
-    
     //SAÍDA
-    
+    document.write("O preço da sua refeição é: R$" + precoDaRefeicao.toFixed(2)); 
 </script>

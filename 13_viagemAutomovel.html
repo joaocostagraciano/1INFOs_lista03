@@ -11,11 +11,18 @@
     */
 
     //ENTRADA
-    
-    
+      let tempoViagemHoras = parseFloat(prompt("Digite o tempo de viagem (em horas):"));
+      let litrosConsumidos = parseFloat(prompt("Digite a quantidade de litros de combustível consumidos:"));
+      let precoLitro = parseFloat(prompt("Digite o preço do litro de combustível:"));
+      let quilometragemTotal = parseFloat(prompt("Digite a quilometragem total percorrida:"));
     //PROCESSAMENTO
-    
-    
-    //SAÍDA
-    
+      let velocidadeMedia = quilometragemTotal / tempoViagemHoras;
+      let consumoMedio = litrosConsumidos / quilometragemTotal;
+      let custoCombustivel = litrosConsumidos * precoLitro;
+      let custoPorQuilometro = custoCombustivel / quilometragemTotal;
+ //SAÍDA
+      document.write("Velocidade média da viagem: " + velocidadeMedia.toFixed(2) + " km/h");
+      document.write("Consumo médio de combustível do veículo: " + consumoMedio.toFixed(2) + " litros/km");
+      document.write("Custo total do combustível: R$" + custoCombustivel.toFixed(2));
+     document.write("Custo da viagem por quilômetro percorrido: R$" + custoPorQuilometro.toFixed(2));
 </script>

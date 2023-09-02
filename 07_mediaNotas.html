@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
-    
+      let notaTrimestre1 = parseFloat(prompt("Digite a nota do 1º trimestre:"));
+      let notaTrimestre2 = parseFloat(prompt("Digite a nota do 2º trimestre:"));
+      let notaTrimestre3 = parseFloat(prompt("Digite a nota do 3º trimestre:"));
     //PROCESSAMENTO
-    
+      let mediaAnual = (notaTrimestre1 + notaTrimestre2 + notaTrimestre3) / 3;
     
     //SAÍDA
-    
+      document.write("A média anual do aluno é: " + mediaAnual.toFixed(2));
 </script>

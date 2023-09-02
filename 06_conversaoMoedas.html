@@ -6,11 +6,10 @@
     */
 
     //ENTRADA
-
-    
+     let dolares = parseFloat(prompt("Digite a quantidade de dólares que você levará:"));
+     let cotacaoDolar = parseFloat(prompt("Digite a cotação atual do dólar:"));
     //PROCESSAMENTO
-    
-    
+     let gastoEmReais = dolares * cotacaoDolar;
     //SAÍDA
-    
+     document.write("Você gastará R$" + gastoEmReais.toFixed(2) + " na viagem aos Estados Unidos.");
 </script>

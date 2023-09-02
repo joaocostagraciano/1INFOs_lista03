@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-    
-    
+     let quantidadeGado = parseInt(prompt("Digite a quantidade de cabeças de gado do fazendeiro:"));
+     let quantidadeHerdeiros = parseInt(prompt("Digite a quantidade de herdeiros:"));
     //PROCESSAMENTO
-    
-    
+     let quantidadeDoada = quantidadeGado * 0.15;
+     let quantidadeRestante = quantidadeGado - quantidadeDoada;
+     let quantidadePorHerdeiro = quantidadeRestante / quantidadeHerdeiros;
     //SAÍDA
-    
+     document.write("Após a doação de 15%, restarão " + quantidadeRestante + " cabeças de gado.");
+     document.write("Cada herdeiro receberá " + quantidadePorHerdeiro + " cabeças de gado.");
 </script>

@@ -9,11 +9,13 @@
     */
 
     //ENTRADA
-    
+     let pesoAtual = parseFloat(prompt("Digite o seu peso atual em quilogramas:"));
     
     //PROCESSAMENTO
-    
+     let pesoEmagrecimento = pesoAtual - (pesoAtual * 0.15);
+     let pesoEngordar = pesoAtual + (pesoAtual * 0.20);
     
     //SAÍDA
-    
+     document.write("Se você emagrecer 15%, seu novo peso será de " + pesoEmagrecimento.toFixed(2) + " kg");
+     document.write("Se você engordar 20%, seu novo peso será de " + pesoEngordar.toFixed(2) + " kg");
 </script>

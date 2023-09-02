@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
+     let precoOriginal = parseFloat(prompt("Digite o preço original do produto:"));
+     let precoPromocional = parseFloat(prompt("Digite o preço promocional do produto:"));
 
-    
     //PROCESSAMENTO
-    
-    
+     let desconto = precoOriginal - precoPromocional;
+     let porcentagemDesconto = (desconto / precoOriginal) * 100;
     //SAÍDA
-    
+     document.write("O desconto foi de R$" + desconto.toFixed(2));
+     document.write( "A porcentagem de desconto foi de " + porcentagemDesconto.toFixed(2) + "%");
 </script>
